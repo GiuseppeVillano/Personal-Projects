@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en">  
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Recipe</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script> 
+    </head>
+    <body> 
+        <div id="recipe-container">
+            <header>
+                <div>
+                    <ion-icon id="lateral-menu" name="menu" size="large"></ion-icon>
+                    <div id="search-container">
+                        <input type="search" id="search-recipe" >
+                        <ion-icon id="button-search" name="search" size="large"></ion-icon>
+                    </div>
+                </div>
+            </header>
+            <h1 id="title">All Recipes</h1>
+
+            <div id="center">
+                <div>
+                    <ul id="scroll-x-recipe">
+                    </ul>
+                </div>
+            </div>
+            
+            <footer>
+                <ul id="scroll-y-recipe">
+                </ul>
+            </footer>
+        </div>
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
