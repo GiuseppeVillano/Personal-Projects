@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Animefy X Mangafy</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                
+        <link rel="stylesheet" href="../Css/ui.css">
+        <link rel="stylesheet" href="../Css/style.css">
+        
+        <script type="module" src="../Js/ui.js" defer></script> 
+    </head>
+    <body> 
+        <div id="background-style"></div>
+
+        <header>
+            <h4 id="title-site">Animefy X Mangafy</h4>
+            <div class="container-genres1">
+                <div class="container-genres" id="container-genres">
+                    <div class="button-genre-search">
+                        <button class="btn-genre-search" id="genre-search">Search</button>
+                        <div class="container-info">
+                            <h6 class="info-search-genre">
+                                Activate the option to get anime with all the selected genres, 
+                                otherwise deactivate to get them with at least 1 genre of the selected.
+                            </h6>
+                            <ion-icon class="option-genres icon" name="options-outline"></ion-icon>
+                            <ion-icon class="option-genres-reset icon" name="refresh-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="genres">
+                    </div>
+                </div>
+            </div>
+            <ion-icon style="font-size: 24px" name="filter-circle-outline" id="filter-genres"></ion-icon>
+            <div class="search-container">
+                <input type="text" id="search-box" placeholder="Search...">
+                <ion-icon style="font-size: 24px" name="search-circle-outline"></ion-icon>
+            </div>
+            <button id="filter" class="active">
+                <ion-icon name="accessibility-outline"></ion-icon>
+                <h6>Family <br> Filter</h6>
+            </button>
+        </header>
+        <div class="container">
+            <div class="container-left">
+                <div class="left">
+                    <ul class="menu">
+                        <li class="active menu" id="home">
+                            <ion-icon name="home-outline"></ion-icon>
+                            <h6>Discover</h6>
+                        </li>
+                        <li class="menu" id="personal-list">
+                            <ion-icon name="library-outline"></ion-icon>
+                            <h6>Personal List</h6>
+                        </li>
+                        <!--li class="menu" id="update-database">
+                            <ion-icon name="server-outline"></ion-icon> 
+                            <h6>Update</h6>
+                        </li-->
+                            
+                    </ul>
+                    <div class="bug-report">
+                        <ion-icon name="bug-outline"></ion-icon>
+                        <h6>Bug Report</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="main" id="central">
+            </div>
+        </div>
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
